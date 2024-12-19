@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Pause Extension",
+    "version": "1.0",
+    "description": "Pauses YouTube videos when the tab becomes inactive.",
+    "permissions": ["tabs"],
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["contentScript.js"]
+      }
+    ]
+  }
+  
